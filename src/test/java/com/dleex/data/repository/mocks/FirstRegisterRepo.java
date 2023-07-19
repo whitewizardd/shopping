@@ -15,8 +15,8 @@ import java.util.function.Function;
 public class FirstRegisterRepo implements UserRepository {
     private int counter;
     @Override
-    public Optional<User> findUserByUserName(String userName) {
-        return Optional.empty();
+    public User findUserByUserName(String userName) {
+       return new User();
     }
 
     @Override
